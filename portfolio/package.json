@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://HMMBERT.github.io/Portf",
   "eslintConfig": {
     "extends": [
       "react-app",
