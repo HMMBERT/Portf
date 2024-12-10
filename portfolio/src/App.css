@@ -1,0 +1,103 @@
+/* Import the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply the Poppins font globally */
+.App {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  height: 100vh; /* Full height for the background */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+}
+
+/* Light mode styles */
+.light-mode {
+  background-image: url('./assets/images/White.webp'); /* Set the white background image */
+  color: black;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-image: url('./assets/images/Black.webp'); /* Set the black background image */
+  color: white;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Increased padding for better spacing */
+  background-color: rgba(240, 240, 240, 0.8); /* Slightly transparent for better visibility */
+  border: 2px solid #ccc; /* Add border (light gray) */
+  border-radius: 5px; /* Optional: round the corners */
+  position: relative; /* Allow absolute positioning of elements if needed */
+  z-index: 1; /* Ensure navbar is above background images */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600; /* Slightly bolder links */
+  font-size: 14px; /* Reduced font size for links */
+}
+
+/* Button styles (no borders, no background) */
+.mode-toggle-btn {
+  padding: 5px 15px; /* Reduced padding for the button */
+  cursor: pointer;
+  background: none;    /* No background color */
+  color: inherit;      /* Inherits color from parent */
+  font-size: 14px;     /* Match the font size with the links */
+  border: none;        /* Ensures no border */
+  outline: none;       /* Ensures no outline */
+  font-weight: 600;    /* Slightly bolder text */
+}
+
+/* Dark mode navbar */
+.dark-mode .navbar {
+  background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent for better visibility */
+  border: 2px solid #444; /* Add darker border for dark mode */
+}
+
+/* Styles specific to About, Services, and Contact components */
+.about,
+.services,
+.contact {
+  /* Reset styles to avoid inheritance */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add padding to these sections */
+  background: none; /* Ensure no background styles from App.css */
+  color: inherit; /* Inherit color from parent for consistency */
+  border: none; /* Remove any default borders */
+}
+
+/* Optional: Additional styles to further separate component designs */
+.about {
+  background-color: #e0e0e0; /* Custom background color */
+  padding: 20px; /* Custom padding */
+  border: 1px solid #ccc; /* Custom border */
+}
+
+.services {
+  background-color: #e0e0e0; /* Custom background color */
+  padding: 20px; /* Custom padding */
+  border: 1px solid #ccc; /* Custom border */
+}
+
+.contact {
+  background-color: #e0e0e0; /* Custom background color */
+  padding: 20px; /* Custom padding */
+  border: 1px solid #ccc; /* Custom border */
+}
+
